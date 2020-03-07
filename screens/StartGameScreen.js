@@ -14,7 +14,7 @@ import Card from "../components/Card";
 import Color from "../constants/colors";
 import NumberContainer from "../components/NumberContainer";
 
-const StartGameScreen = ({onStartGame}) => {
+const StartGameScreen = ({ onStartGame }) => {
   const [enteredValue, setEnteredValue] = useState("");
   const [confirmed, setConfirmed] = useState(false);
   const [selectedNumber, setSelectedNumber] = useState();
@@ -109,7 +109,8 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
-    marginVertical: 10
+    marginVertical: 10,
+    fontFamily: "open-sans-bold"
   },
   inputContainer: {
     width: 300,
