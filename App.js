@@ -14,22 +14,21 @@ const fetchFonts = () => {
   });
 };
 
-
-
 export default function App() {
   const [userNumber, setUserNumber] = useState();
   const [guessRounds, setGuessRounds] = useState(0);
   const [dataLoaded, setDataLoaded] = useState(false);
 
-  if(!dataLoaded) {
-    return <AppLoading
+  if (!dataLoaded) {
+    return (
+      <AppLoading
         startAsync={fetchFonts}
         onFinish={() => {
           setDataLoaded(true);
         }}
         onError={() => console.log(err)}
       />
-    
+    );
   }
 
   const configureNewGameHandler = () => {
