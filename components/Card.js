@@ -8,14 +8,11 @@ const Card = props => {
 };
 const styles = StyleSheet.create({
   card: {
-    width: 300,
-    maxWidth: "80%",
-    alignItems: "center",
     shadowColor: "black",
     shadowOffset: { width: 0, height: 2 },
     shadowRadius: 8,
     shadowOpacity: 0.26,
-    elevation: 5,
+    elevation: 8,
     backgroundColor: "white",
     padding: 20,
     borderRadius: 10
