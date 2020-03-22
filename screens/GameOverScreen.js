@@ -15,7 +15,7 @@ import MainButton from "../components/MainButton";
 
 const GameOverScreen = props => {
   return (
-    <ScrollView>
+   <ScrollView>
       <View style={styles.screen}>
         <TitleText style={styles.gameOverText}>The Game is Over!</TitleText>
         <View style={styles.imageContainer}>
@@ -44,16 +44,14 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
     justifyContent: "center",
-    alignItems: "center"
-  },
-  gameOverText: {
-    marginVertical: Dimensions.get("window").height / 40
+    alignItems: "center",
+    paddingVertical: 10
   },
   imageContainer: {
     borderWidth: 3,
     borderColor: "black",
+    maxWidth: "85%",
     width: Dimensions.get("window").width * 0.7,
-    maxWidth: "80%",
     height: Dimensions.get("window").width * 0.7,
     borderRadius: (Dimensions.get("window").width * 0.7) / 2,
     overflow: "hidden",
